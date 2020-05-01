@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>WeatherIO</title>
+<!--install flask or change the link here...this is right according to flask...but...if not on flask then change it up-->
+<link href="{{url_for('static', filename = 'css/mahesh.css')}}" rel="stylesheet">
+</head>
+<header>
+    <div class="heading">
+      <div class= "text">
+      <h1>Weather IO</h1>
+        <span>Simple . Efficient . Accurate .</span>
+  </header>
+  <body>
+
+   <div class="container">
+   
+      <img class= "bcd" src="https://cdn.wallpaperhi.com/2560x1600/20120908/rain%20weather%20water%20drops%20umbrellas%20raining%202560x1600%20wallpaper_www.wallpaperhi.com_67.jpg" width=100% height=1000px>
+       <img class= "abc" src="https://www.colorhexa.com/007991.png" height="900" width="700">
+      <form>
+  <label class="d" for="fname">Temperature :</label><br>
+  <p class="s" type="text" id="fname" name="fname">{{ tempvar }} °C</p>
+  <label class ="t" for="lname">Summary:</label><br>
+        <p class="e" type="text" id="lname" name="lname">{{ summaryvar }}</p>
+  <label class ="r" for="tname">Humidity:</label><br>
+        <p class="z" type="text" id="lname" name="lname">{{ humidityvar }}</p>
+    <label class ="q" for="tname">Ozone:</label><br>
+        <p class="a" type="text" id="lname" name="lname">{{ ozonevar }} ppm</p>
+          <label class ="w" for="tname">Wind Speed:</label><br>
+  <p class="x" type="text" id="lname" name="lname">{{ windspeedvar }} NT</p>
+          <label class ="y" for="tname">Pressure:</label><br>
+        <p class="p" type="text" id="lname" name="lname">{{ pressurevar }} pa</p>
+   
+        
+</form>
+    <div>
+      <!--write the text for all variables here and css them....the "ipvar" is user defined.....just make sure u pass it in python file-->
+      <!--and to include var in html do it like {{ any_var_name }}-->
+    </div>
+    </div>
+    </div>
+ </html>
