@@ -15,8 +15,8 @@ def ipad():
     return ip_address
 
 def weatherinfo(lat,long_):
-    api ='af654ddc453104adcc9b4d0818a7604d'
-    dsky = DarkSky(api)
+    api ='af654ddc453104adcc9b4d0818a7604d' # this is mine, its is possible to get your own if you ready have an darksky acc...or..
+    dsky = DarkSky(api)                     # its not possible coz...darksky stopped creating new APIs since it is aquired by apple
     forecast = dsky.get_forecast(
         lat,long_,
         extend=False,
