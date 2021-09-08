@@ -60,7 +60,7 @@ pandas-profiling==2.10.0
 pandocfilters==1.4.3
 phik==0.11.0
 pickleshare==0.7.5
-Pillow==8.1.1
+Pillow==8.3.2
 prompt-toolkit==3.0.7
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
